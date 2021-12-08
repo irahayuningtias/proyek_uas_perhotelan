@@ -21,5 +21,7 @@ Auth::routes();
 
 //tamu 
 Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('hotel.home');
-Route::get('home/description', [App\Http\Controllers\HomeController::class, 'description'])->name('hotel.description');
+Route::get('home/descriptionPatriaPalaceHotel', [App\Http\Controllers\HomeController::class, 'descriptionPatriaPalaceHotel'])->name('hotel.descriptionPatriaPalaceHotel');
+Route::get('home/descriptionGrandMansionHotel', [App\Http\Controllers\HomeController::class, 'descriptionGrandMansionHotel'])->name('hotel.descriptionGrandMansionHotel');
+Route::get('home/descriptionPuriPerdana', [App\Http\Controllers\HomeController::class, 'descriptionPuriPerdana'])->name('hotel.descriptionPuriPerdana');
 //admin

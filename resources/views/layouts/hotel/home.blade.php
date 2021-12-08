@@ -10,7 +10,7 @@
                     <div class="flex-container">
                         <center>
                         <img src="https://pix10.agoda.net/hotelImages/267624/-1/2945abd0edd682a4e915e7c454181ed3.jpg?ca=7&ce=1&s=500x500" width="350" height="225">
-                        <div class="ml-4 text-lg leading-7 font-semibold"><a href="../hotel/description" class="underline text-gray-900 dark:text-white">Patria Palace Hotel<br>⭐ ⭐ ⭐ </a></div>
+                        <div class="ml-4 text-lg leading-7 font-semibold"><a href="home/descriptionPatriaPalaceHotel" class="underline text-gray-900 dark:text-white">Patria Palace Hotel<br>⭐ ⭐ ⭐ </a></div>
                         </center>
                         <br><br>
                         <center>

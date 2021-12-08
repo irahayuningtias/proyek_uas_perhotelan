@@ -27,8 +27,16 @@ class HomeController extends Controller
         $user = Auth::user();
         return view('layouts.hotel.home', ['user' => '$user']);
     }
-    public function description()
+    public function descriptionPatriaPalaceHotel()
     {
-        return view('layouts.hotel.description');
+        return view('layouts.hotel.descriptionPatriaPalaceHotel');
+    }
+    public function descriptionGrandMansionHotel()
+    {
+        return view('layouts.hotel.descriptionGrandMansionHotel');
+    }
+    public function descriptionPuriPerdana()
+    {
+        return view('layouts.hotel.descriptionPuriPerdana');
     }
 }
