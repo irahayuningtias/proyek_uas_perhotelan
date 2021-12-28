@@ -32,7 +32,7 @@ class TambahKolomForeignkeyDetailReservasi extends Migration
             $table->dropForeign(['id_hotel']);
             $table->bigInteger('id_reservasi');
             $table->dropForeign(['id_reservasi']);
-            $table->string('id_kamar');
+            $table->bigInteger('id_kamar');
             $table->dropForeign(['id_kamar']);
         });
     }

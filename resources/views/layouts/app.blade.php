@@ -73,67 +73,10 @@
                 </div>
             </div>
         </nav>
-
-        
-
         <main class="py-4">
             @yield('content')
         </main>
     </div>
-    <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-  </section>
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3 d-flex justify-content-around">
-        <!-- Grid column -->
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col">
-          <!-- Links -->
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col">
-          <!-- Links -->
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col">
-          <!-- Links -->
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    ©2021 Paradise
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
 </body>
 </html>
+
