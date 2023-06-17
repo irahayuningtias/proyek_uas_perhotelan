@@ -39,7 +39,7 @@
                         <td>{{$kmr->deskripsi_kamar}}</td>
                         <td>{{$kmr->hrg_per_mlm}}</td>
                         <td>
-                            <a class="btn btn-primary">Pesan</a>
+                            <a class="btn btn-primary" href="{{ route('reservasi') }}">Pesan</a>
                         </td>  
                     </tr>
                     @endforeach 

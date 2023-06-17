@@ -26,4 +26,8 @@ class Kamar extends Model
     public function kamar(){
         return $this->hasMany(Deskripsi::class);
     }
+
+    public function reservasi(){
+        return $this->belongsTo(Kamar::class);
+    }
 }

@@ -65,4 +65,25 @@ class HomeController extends Controller
         $kamar = DB::table('kamar')->where('id_hotel', 3)->get(['jenis_kamar', 'deskripsi_kamar', 'hrg_per_mlm']);
         return view('layouts.hotel.kamarPuriPerdana', ['kamar' => $kamar]);
     }
+
+    public function create(){
+        return view('hotel.reservasi');
+    }
+
+    public function reservasi(Request $request){
+        $request->validate([
+            'jml_tamu' => 'required',
+            'check_in' => 'required',
+            'check_out'=> 'required',
+            'lama_inap'=> 'required',
+            'nama_pemesan' => 'required',
+            'no_identitas' => 'required',
+            'no_hp' => 'required',
+            'diskon' => 'required',
+            'total_byr' => 'required',
+            'id_hotel' => 'required',
+        ]);
+
+        Reservasi::create($request->all());
+    }
 }

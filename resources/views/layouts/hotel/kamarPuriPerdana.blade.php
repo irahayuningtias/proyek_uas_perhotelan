@@ -44,7 +44,7 @@
                             <a class="btn btn-primary">Pesan</a>
                         </td>
                     </tr>
-                    @endforeach  
+                    @endforeach
                     </div>
                 </div>
                 </div>

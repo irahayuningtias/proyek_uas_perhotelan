@@ -20,12 +20,11 @@ class Reservasi extends Model
         'nama_pemesan',
         'no_identitas',
         'no_hp',
-        'diskon',
         'total_byr',
         'id_hotel',
     ];
 
     public function reservasi(){
-        return $this->belongsTo(Deskripsi::class);
+        return $this->belongsTo('App\Models\Kamar', 'App\Models\Hotel', 'App\Models\Reservasi');
     }
 }

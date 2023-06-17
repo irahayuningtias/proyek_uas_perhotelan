@@ -21,6 +21,11 @@ Route::get('home/descriptionGrandMansionHotel/{id_hotel}', [App\Http\Controllers
 Route::get('home/descriptionPuriPerdana/{id_hotel}', [App\Http\Controllers\HomeController::class, 'descriptionPuriPerdana'])->name('hotel.descriptionPuriPerdana');
 Route::get('home/kamarGrandMansionHotel', [App\Http\Controllers\HomeController::class, 'kamarGrandMansionHotel'])->name('hotel.kamarGrandMansionHotel');
 Route::get('home/kamarPatriaPalaceHotel', [App\Http\Controllers\HomeController::class, 'kamarPatriaPalaceHotel'])->name('hotel.kamarPatriaPalaceHotel');
-Route::get('home/kamarPuriPerdana', [App\Http\Controllers\HomeController::class, 'kamarPuriPerdana'])->name('hotel.kamarPuriPerdana');
+Route::get('home/kamarPuriPerdana', [App\Http\Controllers\HomeController::class, 'kamarPuriPerdana'])->name('hotel.kamarPuriPerdana'); 
+
+//reservasi
+//Route::get('kamarGrandMansionHotel/reservasi',  [App\Http\Controllers\ReservasiController::class, 'create'])->name('hotel.reservasi');
+Route::match(['get', 'post'], 'home/kamarGrandMansionHotel/reservasi',  [App\Http\Controllers\HomeController::class, 'reservasi']);
+//Route::match('/reservasi',  'App\Http\Controllers\ReservasiController@create')->name('hotel.reservasi');
 
 //admin

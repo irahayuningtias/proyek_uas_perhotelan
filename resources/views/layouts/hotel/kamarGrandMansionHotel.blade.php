@@ -34,14 +34,11 @@
                             <img src="https://pix8.agoda.net/hotelImages/391746/448087765/232a7041231f367426ee05f20b2845b7.jpg?ca=23&ce=0&s=1024x768" width="100" height="50">
                             @endif
                         </td>
-                            
-                        
                         <td>{{$kmr->deskripsi_kamar}}</td>
                         <td>{{$kmr->hrg_per_mlm}}</td>
                         <td>
-                            <a class="btn btn-primary">Pesan</a>
+                            <a class="btn btn-primary" href="{{ route('kamarGrandMansionHotel/reservasi') }}">Pesan</a>
                         </td>
-                        
                     </tr>
                     @endforeach  
                     </div>
